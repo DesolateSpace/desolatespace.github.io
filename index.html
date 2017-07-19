@@ -70,7 +70,19 @@
 
 
     
-    </style>    
+    </style>   
+    <script>
+        var favSport = prompt('Your favorite game?');
+        alert('Your favourite game is ' + favSport);
+
+        function wait(ms){
+        var start = new Date().getTime();
+        var end = start;
+        while(end < start + ms) {
+            end = new Date().getTime();
+        }
+}
+    </script> 
 </head>
 
 <body>
@@ -78,5 +90,14 @@
     <h1 align="center" id="maintext"> Welcome to my page</h2>
     <div align="center"><button class="button" align="center"><span>Awesome </span></button></div>
 </div>
+<script>
+    wait(10000);
+    if (favSport === "CSGO") {
+        window.location.href = 'https://www.reddit.com/r/GlobalOffensive/';
+    } else {
+        window.location.href = 'https://encrypted.google.com'
+    }
+
+</script>
 </body>
 </html>
